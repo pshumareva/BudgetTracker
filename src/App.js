@@ -8,7 +8,7 @@ import { AppProvider } from "./context/AppContext";
 
 const App = () => {
   return (
-   
+    <AppProvider>
       <div className="w-[95%] mx-auto">
         <div className="w-[500px] bg-slate-400 px-4 pb-4 mt-4 border-2 border-slate-500 ">
           <div className="mb-6 ">
@@ -35,8 +35,8 @@ const App = () => {
           </div>
         </div>
       </div>
-      
+    </AppProvider>
   );
-}
+};
 
 export default App;
