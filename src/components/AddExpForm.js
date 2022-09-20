@@ -11,9 +11,10 @@ const AddExpForm = () => {
   const onSubmit = (event) => {
     event.preventDefault();
 
+   
     const expense = {
       id: uuidv4(),
-      name: name,
+      name,
       cost: parseInt(cost),
     };
 
@@ -22,8 +23,9 @@ const AddExpForm = () => {
       payload: expense,
     });
   };
+  
   return (
-    <form onSumbit={onSubmit}>
+    <form onSubmit={onSubmit}>
       <div className="flex flex-col mb-1">
         <label for="name" className="font-medium">
           Name
@@ -52,7 +54,7 @@ const AddExpForm = () => {
       </div>
       <button
         type="submit"
-        className="p-2 mt-2 font-medium border rounded-md bg-slate-300"
+        className="p-2 mt-2 font-medium bg-teal-300 border rounded-md "
       >
         Save
       </button>

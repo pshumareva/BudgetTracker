@@ -10,9 +10,9 @@ const App = () => {
   return (
     <AppProvider>
       <div className="w-[95%] mx-auto">
-        <div className="w-[500px] bg-slate-400 px-4 pb-4 mt-4 border-2 border-slate-500 ">
+        <div className="w-[500px] bg-slate-300 px-4 pb-4 mt-4 border-2 border-slate-500 rounded-2xl">
           <div className="mb-6 ">
-            <h1 className="text-[40px] font-semibold mb-4 text-slate-800 ">
+            <h1 className="text-[40px] font-semibold mb-4 text-slate-800 text-center">
               Budget Tracker
             </h1>
             <div className="flex gap-4">

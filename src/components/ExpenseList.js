@@ -4,11 +4,11 @@ import ExpenseItem from "./ExpenseItem";
 
 const ExpenseList = () => {
   const { expenses } = useContext(AppContext);
-
   return (
-    <div>
+    <div >
       <ul>
         {expenses.map((expense) => (
+          
           <ExpenseItem
             id={expense.id}
             name={expense.name}
