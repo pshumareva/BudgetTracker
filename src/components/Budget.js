@@ -27,7 +27,7 @@ const Budget = (props) => {
                 id="budget"
                 value={value}
                 onChange={handleSetBudget}
-                placeholder="Budget"
+                
               ></input>
             </form>
           </div>

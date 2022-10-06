@@ -22,6 +22,9 @@ const AddExpForm = () => {
       type: "ADD_EXPENSE",
       payload: expense,
     });
+
+    setName("");
+    setCost("")
   };
   
   return (
@@ -37,6 +40,7 @@ const AddExpForm = () => {
           id="name"
           value={name}
           onChange={(event) => setName(event.target.value)}
+          placeholder="Enter name"
         ></input>
       </div>
       <div className="flex flex-col mb-1">
@@ -50,6 +54,7 @@ const AddExpForm = () => {
           id="cost"
           value={cost}
           onChange={(event) => setCost(event.target.value)}
+          placeholder="Enter cost"
         ></input>
       </div>
       <button
