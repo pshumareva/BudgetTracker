@@ -28,8 +28,7 @@ const AppReducer = (state, action) => {
 
 const initialState = {
   budget: 0,
-  expenses: [
-  ],
+  expenses: [],
 };
 
 export const AppContext = createContext();

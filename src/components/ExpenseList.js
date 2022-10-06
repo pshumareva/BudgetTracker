@@ -15,9 +15,6 @@ const ExpenseList = () => {
 		const searchResults = expenses.filter((filteredExpense) =>
 			filteredExpense.name.toLowerCase().includes(event.target.value)
 		);
-    console.log("value",event.target.value,
-    "searchResults", searchResults)
-		setfilteredExpenses(searchResults);
 	};
   return (
     <div >

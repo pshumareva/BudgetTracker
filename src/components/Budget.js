@@ -27,7 +27,6 @@ const Budget = (props) => {
                 id="budget"
                 value={value}
                 onChange={handleSetBudget}
-                
               ></input>
             </form>
           </div>
